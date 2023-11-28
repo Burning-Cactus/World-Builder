@@ -1,7 +1,16 @@
+import { Outlet } from 'react-router-dom';
+import Nav from './components/Nav';
+
 function App() {
 
   return (
-    <><h1>Welcome to World Builder!</h1></>
+    <>
+      <Nav />
+      <h1>Welcome to World Builder!</h1>
+      <div>
+        <Outlet />
+      </div>
+    </>
   )
 }
 
